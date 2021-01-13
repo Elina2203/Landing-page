@@ -133,14 +133,21 @@ footer {
   padding:23px 24px; 
 }
 
+.footer-menu nav a {
+  display: inherit;
+  flex-direction: row;
+  align-items: space-between;
 
+}
 .footer-menu a {
+ 
+ 
   font-size: 12px;
   padding-right: 34px;
   color: #FFFFFF;
   text-decoration: none;
 }    
-
+ 
 
   @media only screen and (max-width: 786px) {
   header {
@@ -160,7 +167,7 @@ footer {
   }
   
   .footer-menu {
-    padding:31px;
+    padding-bottom:31px;
   }
 
   .made-by{
@@ -177,7 +184,9 @@ footer {
  }
 
  nav.top-menu {
+  display: flex;
   display: none;
+  align-items: center;
   position: absolute;
   top:6em;
   right: 0;
@@ -194,27 +203,23 @@ footer {
   display: flex;
  }
 }
+
 @media only screen and (max-width: 476px) {
   nav.footer-menu {
     display: flex;
     flex-direction: row;
-    justify-items: left;
-  
-    
+    justify-items: left; 
 }
+nav.footer-menu a {
+  justify-items: center; 
 }
 
-  @media only screen and (max-width: 400px) {
+
+}
+
+ @media only screen and (max-width: 400px) {
  .input-field input {
     width:200px;
   }
   
-  footer {
-   text-align: center;
-  }
-
-  .dropdown:focus + nav {
-   display: flex;
-  }
 }
-
