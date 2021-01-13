@@ -56,6 +56,9 @@ body {
     padding:33px;
     box-sizing: border-box;
   }
+  .social-icons nav a {
+    text-decoration: none;
+  }
 
   .social-icons h1{
    color: #FFFFFF;  
