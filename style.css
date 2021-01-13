@@ -26,8 +26,8 @@ body {
     justify-content: space-between;
     margin: auto;
     padding:23px 24px;
-   
   }
+
   .top-menu img{
    vertical-align: middle;
    padding-bottom:5px;
@@ -78,10 +78,11 @@ h2  {
    display: block;
    margin-top:33px;
     }
+
 #sign-up-container .input-field {
    margin: 25px 0 25px 25px;
- 
 }
+
 .input-field input {
   width: 269px;
   padding-bottom: 5px;
@@ -91,6 +92,7 @@ h2  {
   border-bottom:1px solid #D2D2D2;
   padding-bottom: 7px;
 }
+
 .input-field input:focus {
   border-bottom:1px solid #9C27B0;
 }
@@ -101,8 +103,11 @@ h2  {
   margin-right:15px;
 }
 
+.dropdown{
+display:none;
+}
+
 .btn-get-started {
- 
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -125,59 +130,91 @@ footer {
   max-width: 1139px;
   display: flex;
   justify-content: space-between;
-  padding:23px 24px;
-   
+  padding:23px 24px; 
 }
 
 
-  .footer-menu {
-  
+.footer-menu a {
   font-size: 12px;
-  line-height: 14px;
-  color: #FFFFFF;
-}
-
-.footer-menu a{
   padding-right: 34px;
-  font-size: 12px;
-  line-height: 14px;
   color: #FFFFFF;
   text-decoration: none;
-}
+}    
 
 
-@media only screen and (max-width: 786px) {
+  @media only screen and (max-width: 786px) {
   header {
     background: rgba(0, 0, 0, 0.4);
-  }
+  }   
+
+
+  
   .social-icons {
     background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5), 0px 4px 25px rgba(0, 0, 0, 0.12);
     border-radius: 3px;     
-}
-body { 
-height:786px;
-}
-footer{
-  display: inline-block;
-  margin: auto;
-}
-.footer-menu {
-  padding-bottom:31px;
- 
-}
-.made-by{
-margin-left: 50%;}
+  }
 
-@media only screen and (max-width: 400px) {
-  .input-field input {
-    width:200px;}
-
-}
-    .social-icons {
-      background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5), 0px 4px 25px rgba(0, 0, 0, 0.12);
-      border-radius: 3px;     
+  footer{
+  flex-direction: column;
   }
   
+  .footer-menu {
+    padding:31px;
+  }
+
+  .made-by{
+  align-self: center;
 }
+
+} 
+
+
+@media only screen and (max-width: 560px) {
+
+.dropdown {
+  display: initial;
+ }
+
+ nav.top-menu {
+  display: none;
+  position: absolute;
+  top:6em;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  text-align: right;
+  padding:0.5em;
+  font-size: 75%;
+ }
+
+ 
+ 
+ .dropdown:focus + nav{
+  display: flex;
+ }
+}
+@media only screen and (max-width: 476px) {
+  nav.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+  
+    
+}
+}
+
+  @media only screen and (max-width: 400px) {
+ .input-field input {
+    width:200px;
+  }
+  
+  footer {
+   text-align: center;
+  }
+
+  .dropdown:focus + nav {
+   display: flex;
+  }
+}
+
